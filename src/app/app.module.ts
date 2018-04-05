@@ -3,16 +3,25 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
+import { StudentModule } from './student/student.module';
+import { StudentService } from './student.service';
+import { StudentHomeComponent } from './student-home/student-home.component';
+import { STUDENT_ROUTES } from './App.Routing';
+import { AuthorizationGuards } from './guards/auth-guards';
+import { UnauthorizationGuard } from './guards/unAuth-guard';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StudentHomeComponent,
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    StudentModule,
+    STUDENT_ROUTES,
   ],
-  providers: [],
+  providers: [StudentService, AuthorizationGuards, UnauthorizationGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
