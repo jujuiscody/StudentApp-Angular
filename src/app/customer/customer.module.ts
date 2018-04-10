@@ -5,7 +5,7 @@ import { CustomerDataComponent } from './customer-data.component';
 import { CustomerListComponent } from './customer-list.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CustomerService } from '../Customer.Service';
-// import { CUSTOMER_ROUTES } from '../Customer.Routing';
+//import { CUSTOMER_ROUTES } from '../Customer.Routing';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { CustomerService } from '../Customer.Service';
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
-  //CUSTOMER_ROUTES,
+    //CUSTOMER_ROUTES
   ],
   providers: [CustomerService],
   exports: [

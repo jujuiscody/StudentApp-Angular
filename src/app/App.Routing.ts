@@ -7,9 +7,11 @@ import { AuthorizationGuards } from "./guards/auth-guards";
 import { UnauthorizationGuard } from "./guards/unAuth-guard";
 
 const ROUTES = [
-    {path:'', component:StudentHomeComponent},
+    {path:'Home', component:StudentHomeComponent},
+    {path:"data/:id", component:StudentDataComponent},
     {path:"data", component:StudentDataComponent},
-    {path:"form", component:StudentFormComponent, canActivate:[AuthorizationGuards]},  
+    {path:"form/:id", component:StudentFormComponent, canActivate:[AuthorizationGuards]},
+    {path:"form", component:StudentFormComponent},  
     {path:'app', loadChildren:'app/student/student.module#StudentModule', canActivate:[AuthorizationGuards]},
     {path:'**', redirectTo:""}
 ]

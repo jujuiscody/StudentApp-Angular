@@ -2,8 +2,8 @@
 <button class="btn btn-primary"(click)="handleClick()">CustomerPage</button>
 </div>
 <ul>
-    <li><a [routerLink]="['app/customerHome']" routerLinkActive="active">CourseMainPage</a></li>
-    <li><a [routerLink]="[customerData]" routerLinkActive="active">CourseRegistration</a></li>
-    <li><a [routerLink]="[customerlist]" routerLinkActive="active">CourseList</a></li>
-  </ul>
- <router-outlet></router-outlet> 
+  <li><a [routerLink]="['customerHome']" routerLinkActive="active">CourseMainPage</a></li>
+  <li><a [routerLink]="['customerData']" routerLinkActive="active">CourseRegistration</a></li>
+  <li><a [routerLink]="['customerlist']" routerLinkActive="active">CourseList</a></li>
+</ul>
+<router-outlet></router-outlet> 

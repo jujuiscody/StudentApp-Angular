@@ -7,7 +7,7 @@ import { StudentAppComponent } from "./student/student-app/student-app.component
 
 const ROUTES = [
     {path:"", component:StudentAppComponent},
-    {path:'customerHome/:id', component:CustomerHomeComponent},
+   // {path:'customerHome/:id', component:CustomerHomeComponent},
     {path:"", component:StudentAppComponent, children:[
         {path:'customerHome', component:CustomerHomeComponent},
         {path:'customerData', component:CustomerDataComponent},

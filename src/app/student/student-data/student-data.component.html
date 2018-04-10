@@ -2,7 +2,9 @@
   <li *ngFor="let student of studentData">{{"Registered ID : "+student.studentID+", Student firstName: "+ student.firstName +", 
     Student MiddleName: "+student.middleName+", "+"Student LastName: "+student.lastName+", Registered Course:"+student.interestedCourse}}</li>
 </ul>
+<button class="btn btn-primary" (click)="handleEdit(studentData)">EDIT</button>
+    <button class="btn btn-primary" (click)="handleDelete(event)">DELETE</button>
 
 <div class="float-right">
-  <button class="btn btn-primary" (click)="handleClick()">CustomerPage</button>
+  <button class="btn btn-primary" (click)="handleClick()">FormPage</button>
 </div>

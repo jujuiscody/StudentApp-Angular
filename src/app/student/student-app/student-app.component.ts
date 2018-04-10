@@ -16,7 +16,7 @@ export class StudentAppComponent implements OnInit {
   }
 
   handleClick(){
-    this.router.navigate(['/customerHome'],{queryParams:{id:1}});
+   // this.router.navigate(['/customerHome'],{queryParams:{id:1}});
   }
 
  

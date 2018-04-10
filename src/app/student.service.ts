@@ -14,5 +14,12 @@ export class StudentService {
         this.student.push(student);
         console.log(student);
     }
+    handleEdit(studentValue){
+    return this.student.slice();
+    }
+    handleDelete(studentToDelete){
+        this.student.pop();
+        console.log(this.student);
+    }
 
 }
